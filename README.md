@@ -1,7 +1,7 @@
 # simple-sharing-app
 it is a simple sharing app in node js  and mongodb that enables user to send files  
 
-##After clonning or Download this project 
+## After clonning or Download this project 
 In the project directory, you can run:
 
 ### `npm install`
@@ -21,4 +21,4 @@ You will also see any lint errors in the console.
 
 ### `npm test`
 
-#Please leave a star if you like this project !!
+# Please leave a star if you like this project !!
