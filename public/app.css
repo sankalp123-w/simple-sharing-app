@@ -1,0 +1,205 @@
+
+
+.transition{
+  transition: all .2s ease-out;
+}
+
+.h-60{
+height: 14rem;
+}
+
+.w-128{
+width: 32rem;
+}
+:root {
+  --main-bg-color: #edf5fe;
+  --light-blue: #03a9f4;
+  --border-color: #0288d147;
+  --container-width: 500px;
+}
+
+body {
+  font-family: system-ui;
+  background: var(--main-bg-color);
+  height: 98vh;
+  overflow: hidden;
+}
+
+
+.container{
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 1.2rem;
+}
+
+.sharing-container {
+  margin-bottom: 25px;
+  width: var(--container-width);
+  border-radius: 10px;
+  display: block;
+}
+
+.sharing-container p {
+  text-align: center;
+}
+
+.sharing-container .expire {
+  font-size: 16px;
+  opacity: 0.7;
+  margin-top: 0;
+}
+
+.sharing-container .input-container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.sharing-container .input-container input {
+  width: 100%;
+  border-radius: 3px;
+  padding: 10px 15px;
+  font-size: 20px;
+  border: 2px dashed var(--border-color);
+  border-radius: 6px;
+  background: #f5fcff;
+  color: #607d8b;
+}
+
+.sharing-container img {
+  height: 22px;
+  width: 30px;
+  position: absolute;
+  right: 7px;
+  top: 12px;
+  cursor: pointer;
+  background: #f5fcff;
+}
+
+.email-container form {
+  border: 2px solid var(--border-color);
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.email-container,
+.send-btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.email-container label {
+  margin: 5px;
+  font-size: 18px;
+}
+
+.email-container input {
+  border: none;
+  border-bottom: 2px solid var(--border-color);
+  height: 19px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.email-container input:focus {
+  outline: none;
+}
+
+.email-container .filed {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.send-btn-container button {
+  font-size: 18px;
+  padding: 8px 40px;
+  margin-top: 15px;
+  background: var(--main-bg-color);
+  border: none;
+  border-radius: 5px;
+  color: #607d8b;
+  cursor: pointer;
+}
+.download__icon {
+  height:2px;
+  width: 3px;
+  position: absolute;
+  right: 7px;
+  top: 12px;
+  cursor: pointer;
+  background: #f5fcff;
+}
+* {
+  box-sizing: border-box;
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  box-shadow: 0 3px 7px -1px rgba(#000, .1);
+  margin-bottom: 1.6%;
+  background: #fff;;
+  line-height: 1.4;
+  font-family: sans-serif;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 0;
+  }
+  .meta {
+    position: relative;
+    z-index: 0;
+    height: 200px;
+  }
+  .photo {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-repeat:no-repeat;
+    transition: transform .2s;
+  }
+  .read-more {
+    text-align: right;
+  
+      color:skyblue;
+      display: inline-block;
+      position: relative;;
+      }
+  
+@media screen and (max-width: 900px) {
+  :root {
+    --container-width: 320px;
+  }
+  .image-vector {
+    display: none;
+  }
+  .email-container .filed {
+    flex-direction: column;
+  }
+  .email-container .filed {
+    width: 300px;
+  }
+}
+
+@media(max-width:1060px) {
+  .container {
+      max-width:90%;
+  }
+}
+
+@media(max-width: 768px) {
+.container {
+      max-width:full;
+  }
+  .status-box ul li span:before {
+      font-size: 34px;
+  }
+}
